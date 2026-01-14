@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Unlocked - AkashGamer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f0f2f5; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        .btn { display: block; width: 90%; margin: 15px auto; padding: 15px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px; }
+        .locked { background: #6c757d; pointer-events: none; opacity: 0.6; }
+        h2 { color: #333; }
+        p { color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Complete Steps</h2>
+    <p>Please complete the step to get your link</p>
+
+    <a href="https://youtube.com/@yuv_yt_100k?si=Gqj6wZKSvrhM2kTG" target="_blank" class="btn" onclick="unlock()">Step 1: Subscribe Channel</a>
+
+    <a href="#" id="finalBtn" class="btn locked">Step 2: Get File Link</a>
+</div>
+
+<script>
+    function unlock() {
+        alert("Wait 5 seconds after subscribing...");
+        setTimeout(() => {
+            let btn = document.getElementById('finalBtn');
+            btn.classList.remove('locked');
+            btn.style.background = '#28a745';
+            btn.innerHTML = 'Step 2: Download Now';
+            btn.href = 'https://www.mediafire.com/file/95pr1ctxjh54256/x-pro-panel-v11_1738585415.apk/file'; // Yahan Mediafire link dalein
+        }, 5000);
+    }
+</script>
+
+</body>
+</html>
+
